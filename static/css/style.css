@@ -1,0 +1,533 @@
+/* slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the slider height to cover the full viewport height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.slider img.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image width cover the full width of its container */
+    height: 100%; /* Make the image height cover the full height of its container */
+    object-fit: cover; /* Scale the image while preserving its aspect ratio, covering the entire container */
+}
+
+
+
+
+
+/* bottons */
+
+.btn-primary {
+    color: #fff;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-primary:hover {
+    border : 1px solid #ffc107;
+    background:transparent;
+    color:#ffc107;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn {
+    cursor: pointer;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    border-radius: 40px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+/* new code */
+
+
+
+
+
+   
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+    color: #fff;
+}
+
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 14px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 1 !important;
+}
+
+/* nav bar */
+
+/* Style the navbar links */
+.custom-home-link {
+    color: #fff; /* Set default link color to white */
+}
+
+/* Change the link color to yellow on hover */
+.custom-home-link:hover {
+    color: #ffc107;
+}
+
+/* Change the link color to yellow when active */
+.custom-home-link:focus,
+.custom-home-link:hover,
+.custom-home-link:active {
+    color: #ffc107;
+}
+
+/* Change the color of the nav icons to yellow when active */
+.custom-home-link .fa:hover,
+.custom-home-link:hover .fa,
+.custom-home-link:focus .fa,
+.custom-home-link:active .fa {
+    color: #ffc107; /* Change the color to yellow */
+}
+
+
+
+
+/* blog page */
+.blog-entry .meta-date {
+    display: inline-block;
+    background: #4d4d52; }
+    .blog-entry .meta-date span {
+      display: block;
+      color: #fff; }
+    .blog-entry .meta-date .day {
+      font-weight: 700;
+      font-size: 20px; }
+    .blog-entry .meta-date .mos, .blog-entry .meta-date .yr {
+      font-size: 13px; }
+.text-center {
+    text-align: center !important;
+}
+.p-2 {
+    padding: 0.5rem !important;
+}
+.blog-entry .meta > div {
+    display: block;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    font-size: 15px; }
+    .blog-entry .meta > div a {
+      color: #b3b3b3;
+      font-size: 13px; }
+      .blog-entry .meta > div a:hover {
+        color: #cccccc; 
+    }
+
+.blog-entry .text .heading a {
+      color: #000000; }
+      .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
+        color: #fd5f00; 
+    }
+    .ml-auto, .mx-auto {
+        margin-left: auto !important;
+    }
+    
+    .mb-0, .my-0 {
+        margin-bottom: 0 !important;
+    }
+    
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    a {
+        color: #ffc107;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #070707; /* Change link color on hover */
+    }
+    .blog-entry .text .meta-chat {
+        color: #b3b3b3;
+    }
+
+    /* contact */
+    .contact-section .box {
+        width: 100%;
+        display: block;
+    }
+    
+
+    /* search bar */
+    .searchform .search {
+        width: 52px;
+        height: 52px;
+    }
+    .searchform .form-control {
+        width: calc(100% - 52px);
+        border: none;
+        background: transparent !important;
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: 16px;
+    }
+    button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+        cursor: pointer;
+    }
+    .form-control {
+        height: 52px !important;
+        background: #fff !important;
+        color: #000000 !important;
+        font-size: 18px;
+        border-radius: 0px;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    }
+    button, select {
+        text-transform: none;
+    }
+    button, input {
+        overflow: visible;
+    }
+/* forword arror */
+    .fa.fa-arrow-forward::before {
+        content: ">";
+    }
+    /* courses */
+    .course .img {
+        width: 100%;
+        height: 300px;
+    }
+    .img, .blog-img, .user-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    *, *::before, *::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    div {
+        display: block;
+    }
+    /* footer */
+    
+    .ftco-footer .ftco-footer-widget {
+        width: 100%;
+        display: block;
+    }
+    .subscribe-form .form-group input {
+        background: transparent !important;
+        border: 1px solid transparent;
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: 16px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
+    }
+    .subscribe-form .form-group .submit {
+        color: #000000 !important;
+        display: block;
+        width: 100%;
+        height: 52px;
+        font-size: 16px;
+        background: #fff !important;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
+    }
+    .subscribe-form .form-group .form-control {
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    /* apply.html */
+   
+    
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #f093fb;
+        
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+        
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom right, rgb(255, 251, 141), rgb(245, 148, 87))
+        }
+        
+        .card-registration .select-input.form-control[readonly]:not([disabled]) {
+        font-size: 1rem;
+        line-height: 2.15;
+        padding-left: .75em;
+        padding-right: .75em;
+        }
+        .card-registration .select-arrow {
+        top: 13px;
+        }
+
+        /* link hover color */
+        a:hover {
+            color: #ffc107;
+        }
+
+    /* home */
+    .services-2 .icon {
+        line-height: 1;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        background: #fd5f00;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+    }
+    .mt-2 {
+        margin-top: 0.5rem !important;
+    }
+    .align-items-center {
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+    .justify-content-center {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+    .d-flex {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+    
+    body {
+        font-family: "Poppins", Arial, sans-serif;
+        background: #fff;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+        color: #666666;
+    }
+    	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 06/10/2018 08:32
+  	*/
+
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/font/Flaticon.eot");
+    src: url("../fonts/flaticon/font/Flaticon.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/flaticon/font/Flaticon.woff") format("woff"),
+         url("../fonts/flaticon/font/Flaticon.ttf") format("truetype"),
+         url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: "Flaticon";
+      src: url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+    }
+  }
+  
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .flaticon-teacher:before { content: "\f100"; }
+  .flaticon-books:before { content: "\f101"; }
+  .flaticon-diploma:before { content: "\f102"; }
+  .flaticon-reading:before { content: "\f103"; }
+  .flaticon-security:before { content: "\f104"; }
+  .flaticon-education:before { content: "\f105"; }
+  .flaticon-jigsaw:before { content: "\f106"; }
+  .flaticon-kids:before { content: "\f107"; }
+
+  .services-2 {
+    margin-bottom: 30px; }
+    .services-2 .icon {
+      line-height: 1;
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background: #fd5f00;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+      .services-2 .icon span {
+        font-size: 30px;
+        color: #fff; }
+    .services-2 .text {
+      width: calc(100% - 80px); }
+      .services-2 .text h3 {
+        font-size: 20px;
+        font-weight: 500; }
+  
+        .wrap-about .img {
+            width: 100%;
+        }
+        .img, .blog-img, .user-img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background: #fff;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: #666666;
+        }
+         /* #section-counter:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            content: '';
+            z-index: -1;
+            opacity: .8;
+            background: #0d1128;
+            background: #0d1128;
+            background: -moz-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+            background: -webkit-gradient(left bottom, right top, color-stop(0%, #0d1128), color-stop(100%, #fd6100));
+            background: -webkit-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+            background: -o-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+            background: -ms-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+            background: linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1 );
+        }  */
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background: #fbfafa;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: #060606;
+        }
+
+        .w-100 {
+            width: 100%!important; /* Adjust the width as needed */
+            height: 450px!important; /* Fixed height */
+            object-fit: cover; /* Crop the image while maintaining aspect ratio */
+        }
+        
+        /* home page */
+        #section-counter {
+            padding: 100px 0; /* Adjust padding as needed */
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #section-counter .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        #section-counter .heading-section {
+            text-align: center;
+        }
+        
+        #section-counter .counter-wrap {
+            margin-bottom: 30px; /* Adjust margin between counter elements */
+        }
+        
+        #section-counter .icon {
+            font-size: 50px; /* Adjust icon size */
+            color: #fff; /* Icon color */
+        }
+        
+        #section-counter .text {
+            margin-left: 20px; /* Adjust spacing between icon and text */
+        }
+        
+        #section-counter .number {
+            font-size: 36px; /* Adjust counter number size */
+            color: #fff; /* Counter number color */
+        }
+        
+        #section-counter .flaticon-doctor {
+            /* Add any additional styling for the icon if needed */
+        }
+        
+        .bg-light {
+            background: #686f76 !important;
+        }
+
+        

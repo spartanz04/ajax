@@ -1,0 +1,49 @@
+{% load static %}
+
+<div class="d-flex bg-orange">
+    <div class="container-fluid">
+        <div class="row no-gutters d-flex align-items-center align-items-stretch">
+            <div class="col-md-4 d-flex align-items-center py-1 mb-1">
+                <a class="navbar-brand" href="{% url 'home'%}">
+                    <img src="{% static 'images/logo2.jpg' %}" class="nav-link" alt="AjaxitSolutions">
+                </a>
+            </div>
+
+            <div class="col-lg-8 d-block">
+                <div class="row d-flex justify-content-end"> <!-- Align to the right -->
+                    <div class="col-md d-flex topper align-items-center align-items-stretch py-2 md-2">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <i class="fa fa-paper-plane fa-2x" style="color:#ffc107";></i>
+
+                        </div>
+                        <div class="text" style="margin-left: 10px;">
+                            <span style="font-weight: bold;"> Email</span><br>
+                            <a href="mailto:AjaxItSolutions@gmail.com" style="color:#343a40;">ajaxItSolutionss@gmail.com</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md d-flex topper align-items-center align-items-stretch py-2 my-2">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <i class="fa fa-phone fa-2x" style="color:#ffc107";></i> <!-- Phone icon -->
+                        </div>
+                        <div class="text" style="margin-left: 10px;">
+                            <span style="font-weight: bold;">Call</span><br>
+                            <a href="tel:+916374863052" style="color:#343a40;">Call Us: +916374863052</a>
+
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-md topper d-flex align-items-center justify-content-end"> <!-- Align to the right -->
+                        <p class="mb-0">
+                            <a href="{#}" class="btn py-2 px-3 btn btn-primary d-flex align-items-center justify-content-center">
+                                Apply now
+                            </a>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

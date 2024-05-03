@@ -1,0 +1,34 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <ul class="nav me-auto">
+            <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+                <a class="nav-link custom-home-link" href="{% url 'home'%}">Home</a>
+            </li> 
+            <li class="nav-item {% if request.path == '/about/' %}active{% endif %}">
+                <a class="nav-link custom-home-link" href="{% url 'about' %}">About</a>
+            </li>
+            <li class="nav-item {% if request.path == '/blog/' %}active{% endif %}">
+                <a class="nav-link custom-home-link" href="{% url 'blog' %}">Blog</a>
+            </li>
+            <li class="nav-item {% if request.path == '/courses/' %}active{% endif %}">
+                <a class="nav-link custom-home-link" href="{% url 'courses' %}">Courses</a>
+            </li>
+            <li class="nav-item {% if request.path == '/careers/' %}active{% endif %}">
+                <a class="nav-link custom-home-link" href="#" aria-disabled="true">Careers</a>
+            </li>
+            <li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
+                <a class="nav-link custom-home-link" href="{% url 'contact' %}" aria-disabled="true">Contact</a>
+            </li>
+        </ul>
+        
+        <form action="#" class="searchform order-lg-last">
+            <div class="form-group d-flex">
+                <input type="text" class="form-control pl-3" placeholder="Search">
+                <button type="submit" class="form-control search">
+                    <span class="fa fa-search"></span>
+                </button>
+            </div>
+        </form>
+        
+    </div>
+</nav>

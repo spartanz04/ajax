@@ -1,0 +1,12 @@
+{% extends "ajax/layout/main.html" %}
+
+{% block title %}
+    AjaxItSolutions
+{% endblock title %}
+{% block content %}
+    {% if request.path == '/' %}
+        {% include "ajax/inc/slider.html" %}
+        
+                
+    {% endif %}
+{% endblock content %}

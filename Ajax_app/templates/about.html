@@ -1,0 +1,70 @@
+{% extends "ajax/layout/main.html" %}
+{% load static %}
+
+{% block title %}
+    About | AjaxItSolutions
+{% endblock title %}
+
+{% block content %}
+<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{% static 'images/1.jpg' %}')">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6 py-5 px-md-5">
+              <div class="py-md-5">
+                  <div class="col-md-9 ftco-animate text-center">
+                      <h1 class="mb-4" style="font-weight: bold; color: white;">About</h1>
+                      <p class="breadcrumbs">
+                          <span class="mr-2"><a href="{% url 'home' %}">Home <i class="fa fa-arrow-forward"></i></a></span>
+                          <span><a href="">About <i class="fa fa-arrow-forward"></i></a></span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{% static "images/1.jpg" %}'); background-size: cover; background-position: center; color: white;">
+    <div class="about-page">
+        <div class="about-content" style="text-align: center;">
+            <h1 style="color: white;">Advanced Project Management Software</h1>
+            <p>
+                <h4 style="color: white;">Key Features:</h4>
+
+                <p style="color: white;">
+                    <strong>Task Management:</strong>
+                     Easily create, assign, and track tasks with customizable priority levels, deadlines, and dependencies.<br>
+                    <strong>Gantt Charts:</strong>
+                     Visualize project timelines, milestones, and dependencies with interactive Gantt charts for better planning and scheduling.<br>
+                    <strong>Resource Management:</strong> 
+                    Efficiently allocate resources, including team members, equipment, and materials, to maximize productivity and minimize bottlenecks.<br>
+                    <strong>Budget Tracking:</strong>
+                    Monitor project expenses and budgets in real-time, with customizable budget categories and alerts for cost overruns.<br>
+                    <strong>Collaboration Tools:</strong> 
+                    Foster teamwork and communication with built-in chat, file sharing, and comment features, keeping everyone on the same page.<br>
+                    <strong>Time Tracking:</strong> 
+                    Capture billable hours, track time spent on tasks, and generate detailed timesheets for accurate project billing and payroll.<br>
+                    <strong>Reporting and Analytics:</strong> 
+                    Generate insightful reports and analytics on project progress, resource utilization, and budget variance for informed decision-making.<br>
+                    <strong>Integration Capabilities:</strong> 
+                    Seamlessly integrate with popular tools and platforms such as Slack, Microsoft Teams, and Google Workspace for enhanced productivity and workflow automation.
+                </p>
+
+                <h4 style="color: white;">Benefits:</h4>
+
+                <p style="color: white;">
+                    Increased Efficiency: Automate repetitive tasks, eliminate manual processes, and optimize workflows for faster project delivery.<br>
+                    Improved Collaboration: Facilitate seamless communication, file sharing, and feedback exchange among team members, regardless of location or time zone.<br>
+                    Enhanced Visibility: Gain real-time visibility into project status, progress, and performance metrics, enabling proactive decision-making and risk management.<br>
+                    Cost Savings: Reduce project costs by optimizing resource allocation, minimizing waste, and preventing budget overruns through effective budget tracking and management.<br>
+                    Scalability: Scale your project management processes effortlessly as your business grows, with customizable features and flexible licensing options.
+                </p>
+
+                <h4 style="color: white;">Conclusion:</h4>
+                <p style="color: white;">
+                    Our advanced project management software is the ultimate solution for modern businesses seeking to streamline their project workflows, enhance collaboration, and achieve project success. Empower your team with the tools they need to deliver projects efficiently, on time, and within budget. Try our software today and experience the difference it can make in your organization's project management journey.
+                </p>
+        </div>
+    </div>
+</section>
+{% endblock content %}

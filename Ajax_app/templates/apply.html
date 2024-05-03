@@ -1,0 +1,91 @@
+{% extends "ajax/layout/main.html" %}
+{% block title %}Apply | AjaxItSolutions{% endblock %}
+
+{% block content %}
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+            <form method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="text" id="first_name" name="first_name" class="form-control form-control-lg" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="text" id="last_name" name="last_name" class="form-control form-control-lg" placeholder="Last Name">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+                  <div data-mdb-input-init class="form-outline datepicker w-100">
+                    <input type="text" class="form-control form-control-lg" id="education" name="education" placeholder="Education">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <h6 class="mb-2 pb-1">Gender: </h6>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="Female" checked />
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="maleGender" value="Male" />
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="otherGender" value="Other" />
+                    <label class="form-check-label" for="otherGender">Other</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Email ID">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="tel" id="phone_number" name="phone_number" class="form-control form-control-lg" placeholder="Phone Number">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <select name="course" class="form-control" required id="course">
+                    <option value="" selected>---select course---</option>
+                    <option value="course1">C program</option>
+                    <option value="course2">C++</option>
+                    <option value="course3">JAVA</option>
+                    <option value="course4">Python</option>
+                    <option value="course5">Oracle</option>
+                    <option value="course6">File Maker</option>
+                    <option value="course7">HTML 5</option>
+                    <option value="course8">Angular</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-2">
+                <input data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg" type="submit" value="Submit" />
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

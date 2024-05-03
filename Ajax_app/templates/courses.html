@@ -1,0 +1,151 @@
+{% extends "ajax/layout/main.html" %}
+{% load static %}
+
+{% block title %}
+    Courses | AjaxItSolutions
+{% endblock title %}
+
+
+{% block content %}
+<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{% static 'images/1.jpg' %}')">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6 py-5 px-md-5">
+              <div class="py-md-5">
+                  <div class="col-md-9 ftco-animate text-center">
+                      <h1 class="mb-4" style="font-weight: bold; color: white;">Courses</h1>
+                      <p class="breadcrumbs">
+                          <span class="mr-2"><a href="{% url 'home' %}">Home <i class="fa fa-arrow-forward"></i></a></span>
+                          <span><a href="">Courses <i class="fa fa-arrow-forward"></i></a></span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{% static "images/.jpg" %}'); background-size: cover; background-position: center;">
+    {% comment %} <div class="about-page">
+        <div class="about-content" style="text-align: center;">
+            <h1>Our cultures</h1>
+            <h4> Our achievements</h4>
+        </div>
+    </div> {% endcomment %}
+
+    <div class="container-fluid px-4">
+      <div class="row">
+          <div class="col-md-3 course ftco-animate">
+              <div class="img" style="background-image: url('{% static 'images/CLa.jpg' %}')"></div>
+              <div class="text pt-4">
+                  <h3><a href="#">C-Languages</a></h3>
+                  <p>C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.
+
+                      It is a very popular language, despite being old. The main reason for its popularity is because it is a fundamental language in the field of computer science.
+                      
+                      C is strongly associated with UNIX, as it was developed to write the UNIX operating system.</p>
+                  <p><a href="{% url 'apply' %}" class="btn btn-primary">Apply now</a></p>
+              </div>
+          </div>
+
+          <div class="col-md-3 course ftco-animate">
+              <div class="img" style="background-image: url('{% static 'images/C++.jpg' %}')"></div>
+              <div class="text pt-4">
+                  <h3><a href="#">C++-Languages</a></h3>
+                  <p>C++ is one of the world's most popular programming languages.
+
+                      C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+                      
+                      C++ is an oops which gives a clear structure to programs and allows code to be reused, lowering development & applications that can be adapted to multiple platforms.
+                  </p>
+                  <p><a href="{% url 'apply' %}" class="btn btn-primary">Apply now</a></p>
+              </div>
+          </div>
+
+          <div class="col-md-3 course ftco-animate">
+              <div class="img" style="background-image: url('{% static 'images/java.jpg' %}')"></div>
+              <div class="text pt-4">
+                  <h3><a href="#">Java Languages</a></h3>
+                  <p>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+                      It is one of the most popular programming languages in the world
+                      It has a large demand in the current job market
+                      It is open-source  secure, fast and powerful and free
+                      Java is an oops which gives a clear structure to programs and allows code to be reused, lowering development costs</p>
+                  <p><a href="{% url 'apply' %}" class="btn btn-primary">Apply now</a></p>
+              </div>
+          </div>
+
+          <div class="col-md-3 course ftco-animate">
+              <div class="img" style="background-image: url('{% static 'images/python.jpg' %}')"></div>
+              <div class="text pt-4">
+                  <h3><a href="#">Python-Languages</a></h3>
+                  <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+                      It is used for:
+                      
+                      web development (server-side),
+                      software development,
+                      mathematics,
+                      system scripting.
+                      Python can be treated in a procedural way, an object-oriented way or a functional way.
+                      Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+                  </p>
+                  <p><a href="{% url 'apply' %}" class="btn btn-primary">Apply now</a></p>
+              </div>
+          </div>
+
+
+          <div class="col-md-3 course ftco-animate">
+              <div class="img" style="background-image: url('{% static 'images/oracle.jpg' %}')"></div>
+              <div class="text pt-4">
+                  <h3><a href="#">Oracle-Languages</a></h3>
+                  <p>Oracle Database (commonly referred to as Oracle DBMS, Oracle Autonomous Database, or simply as Oracle) is a proprietary multi-model[4] database management system produced and marketed by Oracle Corporation.
+
+                      It is a database commonly used for running online transaction processing (OLTP), data warehousing (DW) and mixed (OLTP & DW) database workloads. Oracle Database is available by several service providers on-prem, on-cloud, or as a hybrid cloud installation.</p>
+                  <p><a href="{% url 'apply' %}" class="btn btn-primary">Apply now</a></p>
+              </div>
+          </div>
+
+          <div class="col-md-3 course ftco-animate">
+              <div class="img" style="background-image: url('{% static 'images/file maker.png' %}')"></div>
+              <div class="text pt-4">
+                  <h3><a href="#">FileMaker-Languages</a></h3>
+                  <p>Claris International Inc., formerly FileMaker Inc., is a computer software development company formed as a subsidiary company of Apple Computer (now Apple Inc.) in 1987. It was given the source code and copyrights to several programs that were owned by Apple, notably MacWrite and MacPaint, in order to separate Apple's application software activities from its hardware and operating systems activities.
+                      In 1998, the company divested itself of all but its flagship product
+                  </p>
+                  <p><a href="{% url 'apply' %}" class="btn btn-primary">Apply now</a></p>
+              </div>
+          </div>
+
+          <div class="col-md-3 course ftco-animate">
+              <div class="img" style="background-image: url('{% static 'images/html.png' %}')"></div>
+              <div class="text pt-4">
+                  <h3><a href="#">Web-Languages</a></h3>
+                  <p>HTML. HTML is the fundamental language for web development and it standardizes your web page creation. ...
+                      JavaScript. You can use JS for both the frontend and backend web development. ...
+                      React. React is a JS library created by Facebook in 2013. ...
+                      Angular. ...
+                      VueJS.
+                      There are several languages that are frequently used for web development. 
+                      Some of the most popular programming languages for web development include HTML/CSS,Java Script.</p>
+                  <p><a href="{% url 'apply' %}" class="btn btn-primary">Apply now</a></p>
+              </div>
+          </div>
+
+          <div class="col-md-3 course ftco-animate">
+              <div class="img" style="background-image: url('{% static 'images/react.png' %}')"></div>
+              <div class="text pt-4">
+                  <h3><a href="#">React-Languages</a></h3>
+                  <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3][4] for building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.[5][6][7]
+
+                      React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js
+                      Because React is only concerned with the user interface and rendering components to the DOM.</p>
+                  <p><a href="{% url 'apply' %}" class="btn btn-primary">Apply now</a></p>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+</section>
+{% endblock content %}
